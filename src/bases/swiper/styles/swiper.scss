@@ -1,0 +1,43 @@
+.swiper {
+	--swiper-width: 100%;
+	--swiper-height: 180px;
+	--swiper-track-padding: 0px;
+	--swiper-border-radius: 10px;
+
+	position: relative;
+	width: var(--swiper-width);
+	height: var(--swiper-height);
+	overflow: hidden;
+	border-radius: var(--swiper-border-radius);
+
+	// track与track-inner宽高与外部容器一样
+	&-track {
+		position: relative;
+		box-sizing: border-box;
+		display: flex;
+		flex-wrap: nowrap;
+		width: 100%;
+		height: 100%;
+		padding: var(--swiper-track-padding);
+		overflow: hidden;
+
+		&-inner {
+			// slide的left属性修改位置
+			position: relative;
+			display: flex;
+			width: 100%;
+			height: 100%;
+			overflow: hidden;
+		}
+
+		&-slide {
+			position: relative;
+
+			// slide在track-inner中不收缩
+			flex-shrink: 0;
+			width: 100%;
+			height: 100%;
+			overflow: hidden;
+		}
+	}
+}

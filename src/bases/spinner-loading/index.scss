@@ -1,0 +1,36 @@
+.spinner {
+	&-loading {
+		z-index: 10001;
+		border-top: 1px solid black;
+		border-right: 1px solid black;
+		border-bottom: 1px;
+		border-left: 1px;
+		border-radius: 50%;
+		animation: spinner 0.8s ease-in infinite;
+	}
+
+	&-loading-color-primary {
+		border-top-color: var(--ygm-color-primary);
+		border-right-color: var(--ygm-color-primary);
+	}
+
+	&-loading-color-white {
+		border-top-color: var(--ygm-color-white);
+		border-right-color: var(--ygm-color-white);
+	}
+
+	&-loading-color-default {
+		border-top-color: var(--ygm-color-weak);
+		border-right-color: var(--ygm-color-weak);
+	}
+
+	@keyframes spinner {
+		0% {
+			transform: rotate(0deg);
+		}
+
+		100% {
+			transform: rotate(360deg);
+		}
+	}
+}

@@ -1,0 +1,8 @@
+.grid-item {
+	--item-span: 1;
+
+	/*
+    grid所占列
+    */
+	grid-column-end: span var(--span);
+}

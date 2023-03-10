@@ -1,0 +1,31 @@
+.navbar {
+	box-sizing: border-box;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+	padding-right: var(--ygm-padding-m);
+	padding-left: var(--ygm-padding-m);
+
+	.navbar-item {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
+		.icon {
+			width: 40px;
+			height: 40px;
+
+			.icon-img {
+				width: 100%;
+				height: 100%;
+			}
+		}
+
+		.header {
+			margin-top: 10px;
+			font-size: var(--ygm-radius-xl);
+			font-weight: 500;
+		}
+	}
+}

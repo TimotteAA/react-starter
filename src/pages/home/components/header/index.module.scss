@@ -1,0 +1,20 @@
+.home-header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 12px 0;
+	font-size: var(--ygm-font-size-m);
+	line-height: 1;
+
+	.left {
+		font-size: var(--ygm-font-size-xl);
+	}
+
+	.right {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		width: 50px;
+		font-size: var(--ygm-font-size-xxl);
+	}
+}

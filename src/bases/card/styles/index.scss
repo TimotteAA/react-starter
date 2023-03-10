@@ -1,0 +1,32 @@
+.card {
+	--card-background: #fff;
+	--card-border-radius: 10px;
+	--card-padding: 13px;
+
+	box-sizing: border-box;
+	font-size: var(--ygm-font-size-m);
+	background-color: var(--card-background);
+	border-radius: var(--card-border-radius);
+
+	&-header {
+		position: relative;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding: var(--card-padding);
+		overflow: hidden;
+
+		&-title {
+			font-size: var(--ygm-font-size-xl);
+		}
+
+		&-extra {
+			font-size: var(--ygm-font-size-m);
+		}
+	}
+
+	.card-body {
+		position: relative;
+		padding: var(--card-padding);
+	}
+}
